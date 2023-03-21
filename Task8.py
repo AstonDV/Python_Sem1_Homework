@@ -14,9 +14,7 @@ if n == m == 1:
     print("Шоколадка состоит всего из одной дольки, разделить ее нельзя!!!")
 elif k < m and k < n:
     print("NO")
-elif k == m or k == n:
-    print("YES")
-elif (k % m == 0 or k % n == 0) and (k < (m * n)):
+elif (k == m or k == n) or ((k % m == 0 or k % n == 0) and (k < (m * n))):
     print("YES")
 else:
     print("NO")
